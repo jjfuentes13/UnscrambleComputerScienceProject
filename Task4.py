@@ -12,6 +12,10 @@ with open('calls.csv', 'r') as f:
     reader = csv.reader(f)
     calls = list(reader)
 
+"""
+Worst case time complexity is O(n)
+"""
+
 excludedNumbers = set()
 potentialTelemarketer = set()
 

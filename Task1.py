@@ -15,6 +15,10 @@ with open('calls.csv', 'r') as f:
     reader = csv.reader(f)
     calls = list(reader)
 
+"""
+Worst case time complexity is O(n)
+"""
+
 telephoneNumbers = set()
 
 for textsNumber in texts:
@@ -26,8 +30,6 @@ for callsNumber in calls:
     telephoneNumbers.add(callsNumber[1])
 
 uniqueNumbers = len(telephoneNumbers)
-
-# print(uniqueNumbers)
 
 print("There are " + str(uniqueNumbers) + " different telephone numbers in the records.")
 

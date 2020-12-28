@@ -11,6 +11,10 @@ with open('calls.csv', 'r') as f:
     reader = csv.reader(f)
     calls = list(reader)
 
+"""
+Worst case time complexity is O(n)
+"""
+
 callTime = {}
 
 for call in calls:
